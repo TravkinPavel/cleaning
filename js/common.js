@@ -1,41 +1,41 @@
 $(document).ready(function() {
-$('.owl-carousel-1').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-         480:{
-            items:2
-        },
-        768:{
-            items:4
-        },
-        992:{
-            items:6
+    $('.owl-carousel-1').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            768:{
+                items:4
+            },
+            992:{
+                items:6
+            }
         }
-    }
-});
-$('.owl-carousel-2').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:2
+    });
+    $('.owl-carousel-2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:2
+            }
         }
-    }
-});
+    });
                 //E-mail Ajax Send
     $("#form1").submit(function() { //Change
         var th = $(this);
@@ -148,4 +148,11 @@ $('.owl-carousel-2').owlCarousel({
         });
         return false;
     });
+    $('.mfp-close-thn').click(function(){
+        $('.block__thank_you').removeClass('block__thank_you_active');
+    });
+    document.getElementById('amount').addEventListener('input', function() {
+      var output = document.getElementById('recalcedSumUsd');
+      output.innerHTML = ((this.value * 5)/100).toFixed(0) + ' рублей';
+  });
 }); 

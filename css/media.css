@@ -95,6 +95,10 @@
 		display: block;
 		margin: 0 auto;
 	}
+	.fixed-btn{
+		bottom: 0;
+		right: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
