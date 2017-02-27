@@ -7,17 +7,139 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.owl-prev{
+		left: 0;
+	}
+	.owl-next{
+		right: 0;
+	}
+	.block-main{
+		background-position: 35% center;
+	}
+	.block1__form__title{
+		font-size: 25px;
+	}
+	.block1{
+		background-position: center 500%;
+	}
+	.block3:after{
+		left: -80px;
+	}
+	.block4__item{
+		left: 0 !important;
+		right: 0 !important;
+	}
+	.block5__item{
+		height: auto;
+		padding: 30px 20px 30px;
+	}
+	.last__block1{
+		font-size: 36px;
+	}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width : 767px) {
+	.block__top-line__contact{
+		text-align: center;
+		float: none;
+		margin: 0 auto 20px;
+	}
+	h1{
+		font-size: 31px;
+	}
+	.block1__form .btn-main {
+		margin: 0 auto;
+	}
+	.block1__form input{
+		float: none;
+		margin: 0 auto 15px;
+		display: block; 
+	}
+	.block1__form__title{
+		line-height: 26px;
+	}
+	.block1__ul{
+		float: none !important;
+		margin: 20px auto;
+	}
+	.block2__item{
+		margin: 20px auto !important;
+	}
+	.block3 .h2{
+		line-height: 32px;
+	}
+	.block3:after{
+		display: none;
+	}
+	.block3__form{
+		float: none;
+		margin: 30px auto;
+	}
+	.block3{
+		padding: 12px 0 30px;
+	}
+	.block4 .block3__form{
+		margin: 30px auto -30px;
+	}
+	.block4__item__inline{
+		display: block;
+	}
+	.block4__item__inline span{
+		display: block;
+		text-align: center;
+		left: 0;
+		top: 0;
+	}
+	.last__block .img-responsive{
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.last__block ul li{
+		font-size: 20px;
+	}
+	.last__block_li2 a{
+		font-size: 21px;
+	}
+	.last__block1 {
+    font-size: 28px;
+}
+	.block3__form{
+		 max-width: 320px;
+		 width: 100%;
+	}
+	.h1{
+		line-height: 36px;
+	}
+	.btn-middle-size{
+		font-size: 20px;
+	}
+	.block-main {
+    background-position: 0px center;
+    padding-bottom: 60px !important;
+}
+.block1__form{
+	padding: 18px 20px 29px;
+}
+	h1 {
+    font-size: 21px;
+    text-align: center;
+}
+	.block-main{
+		padding: 30px 0;
+	}
+	.logozone{
+		display: block;
+		margin: 3px 0 0 0px;
+		text-align: center;
+	}
+	.logozone__descr{
+		left: 0px;
+	}
 }
 
 /* Custom, iPhone Retina */

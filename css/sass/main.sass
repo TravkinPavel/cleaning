@@ -1,17 +1,570 @@
 @import "bourbon/bourbon"
 
+$font-size-16: 16px
+$font-size-17: 17px
+$font-size-18: 18px
+$font-size-20: 20px
+$font-size-22: 22px
+$font-size-23: 23px
+$font-size-24: 23px
+$font-size-25: 25px
+$font-size-35: 35px
+$font-size-30: 30px
+$font-size-40: 40px
+$font-size-50: 50px
+
+$line-height-24: 24px
+$line-height-25: 25px
+$line-height-30: 30px
+$line-height-36: 36px
+$line-height-50: 50px
+
+$main-color: #00add7
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+button
+	border: none
 body
-	font-family: "Raleway", sans-serif
+	font-family: "PF DinDisplay Pro", sans-serif
 	font-weight: normal
-	font-size: 14px
+	font-size: $font-size-16
 	min-width: 320px
 	position: relative
 	line-height: 1.6
 	-webkit-font-smoothing: antialised
-
+	color: #4d4d4d
+	overflow-x: hidden
+	background-color: #FFF
+html
+	overflow-x: hidden
+a:hover, a:active, a:focus, input:hover, input:active, input:focus, button:hover, button:active, button:focus
+	outline: none
+.container
+	max-width: 1030px
+	width: 100%
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: red
 body input:required:valid,
 body textarea:required:valid
 	color: green
+
+.block__top-line
+	padding: 0 0 0
+.logozone
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin: 3px 0 0 -20px
+.logozone__descr
+	color: #6c6c6c
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-23
+	font-weight: 400
+	font-style: italic
+	line-height: $line-height-30
+	max-width: 341px
+	width: 100%
+	position: relative
+	top: 22px
+	left: 5px
+.phone
+	color: #000
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-25
+	font-weight: 500
+	line-height: $line-height-36
+	display: block
+	text-align: center
+	margin: 10px 0 5px
+.btn-main
+	max-width: 235px
+	width: 100%
+	height: 37px
+	background-color: $main-color
+	border-radius: 5px
+	color: #fff
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-18
+	font-weight: 400
+	line-height: $line-height-36
+	display: block
+	text-align: center
+	
+.block__top-line__contact
+	max-width: 235px
+	width: 100%
+	float: right
+
+h1
+	color: #049
+	font-family: "PF DinDisplay Pro"
+	font-size: 40px
+	font-weight: 500
+	font-style: italic
+.block-main
+	background-image: url("../img/main-bg.jpg")
+	background-repeat: no-repeat
+	background-position: 44% center
+	background-size: cover
+	padding: 63px 0 78px
+	ul
+		margin: 24px 0 0px
+		li
+			font-family: "PF DinDisplay Pro"
+			font-size: $font-size-24
+			font-weight: 400
+			background-image: url("../img/icon1.png")
+			background-repeat: no-repeat
+			background-position: left center
+			padding: 0 0 0 37px
+			margin: 0 0 23px
+.btn-middle-size
+	max-width: 319px
+	height: 47px
+	line-height: 47px
+	font-size: $font-size-22
+
+.block1
+	margin: -26px 0 0
+	background-image: url("../img/block1-bg.jpg")	
+	background-repeat: no-repeat
+	background-position: center -9%
+	background-size: 125%
+	padding: 0 0 55px
+.block1__form
+	padding: 18px 0 29px
+	max-width: 1000px
+	width: 100%
+	margin: 0 auto 20px
+	background-color: #fff
+	border-radius: 50px
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.23), inset 0 3px 0 $main-color
+	input
+		max-width: 320px
+		width: 100%
+		height: 47px
+		background-color: #fff
+		border: 1px solid #e6e6e6
+		border-radius: 5px
+		box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.11)
+		padding: 0 20px
+		float: right
+		margin: 0 -6px 0 0
+	.btn-main
+		margin: 0 0px 0 -5px
+.block1__form__title
+	color: #4d4d4d
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-30
+	font-weight: 700
+	line-height: $line-height-50
+	text-align: center
+	margin: 0 0 6px
+
+.h1
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-40
+	font-weight: 700
+	line-height: $line-height-50
+	text-align: center
+
+.block1__ul
+	margin: 16px 0 0
+	li
+		font-family: "PF DinDisplay Pro"
+		font-size: $font-size-20
+		font-weight: 400
+		text-align: center
+		margin: 0 0 22px
+		img
+			display: inline-block
+			margin: -6px 8px 0 0
+.block1__ul1
+	float: left
+.block1__ul2
+	float: right
+	margin-right: -11px
+
+.block2
+	background-color: #EEF3F3
+	margin: -5px 0 0
+	padding: 0 0 53px
+	position: relative
+	background-image: url("../img/block2-bg1.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center bottom
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		width: 100%
+		height: 54px
+		background-image: url("../img/block2-before.png")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		top: -45px
+.block2__item
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-20
+	font-weight: 400
+	line-height: $line-height-25
+	text-align: center
+	margin: 10px auto 0
+.block2__item__in
+	max-width: 235px
+	width: 100%
+	height: 241px
+	border: 3px solid #fff
+	display: block
+	margin: 0 auto 16px
+	align-items: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	img
+		margin: 0 auto
+		display: block
+.block2__item__margin
+	margin: 110px 0 0
+
+.block3
+	padding: 12px 0 160px
+	background-image: url("../img/block3-bg.jpg")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		left: 150px
+		right: 0
+		top: 136px
+		bottom: 0
+		width: 486px
+		height: 458px
+		background-image: url("../img/block3-after.png")
+		background-repeat: no-repeat
+		margin: auto
+		display: block
+		
+	.h2
+		margin: 0px 0 0
+.h2
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-30
+	font-weight: 500
+	line-height: $line-height-50
+	text-align: center
+
+.block3__form
+	width: 320px
+	background-color: #fff
+	border-radius: 30px
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.23), inset 0 3px 0 #00add7
+	display: block
+	float: right
+	margin: 25px 0 0
+	text-align: center
+	padding: 26px 20px 40px
+	input
+		max-width: 280px
+		width: 100%
+		margin: 23px auto 20px
+		padding: 0 20px
+		height: 47px
+		background-color: #fff
+		border: 1px solid #e6e6e6
+		border-radius: 5px
+		box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.11)
+	.btn-main
+		max-width: 279px
+		height: 47px
+		margin: 0 auto 0
+		font-size: $font-size-22
+		line-height: 46px
+.block3__form__title
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-25
+	font-weight: 400
+	line-height: $line-height-30
+
+.block4__item
+	font-family: "PF DinDisplay Pro"
+	font-size: $font-size-20
+	font-weight: 400
+	line-height: $line-height-24
+	text-align: center
+	margin: 19px 0 0
+	position: relative
+	img
+		display: block
+		margin: 0 auto 11px
+.block4__item__inline
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	max-width: 250px
+	width: 100%
+	margin: 17px auto 0
+	text-align: left
+	span
+		position: relative
+		top: 12px
+		left: 10px
+.block4__item1
+	left: 49px
+.block4__item3
+	left: -48px
+.block4__item4
+	left: 49px
+	margin: 65px auto 0
+.block4__item5
+	left: -47px
+	margin: 67px auto 0
+.block4
+	padding: 20px 0 60px
+	background-image: url("../img/block4-bg.png")
+	background-repeat: no-repeat
+	background-position: center top
+	background-size: cover
+	.block3__form
+		display: block
+		float: none
+		margin: -31px auto 0
+		max-width: 350px !important
+		width: 100%
+
+.block5
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.11)
+	background-color: #fafbfb
+	padding: 14px 0 60px
+	background-image: url("../img/block5-bg.jpg")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.block5__item
+	max-width: 490px
+	width: 100%
+	padding: 30px 20px 0
+	margin: 20px auto 0
+	text-align: center
+	height: 435px
+	background-color: rgba(255, 255, 255, 0.86)
+	border-radius: 30px
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.17), inset 0 3px 0 #00add7
+	p
+		font-family: "PF DinDisplay Pro"
+		font-size: 20px
+		font-weight: 400
+		line-height: 30px
+		margin: 30px 0 0
+		input
+			max-width: 120px
+			width: 100%
+			height: 37px
+			background-color: #fff
+			border: 1px solid #e6e6e6
+			border-radius: 4px
+			box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.11)
+			text-align: center
+	strong
+		font-family: "PF DinDisplay Pro"
+		line-height: 30px
+		font-size: 24px
+		font-weight: 700
+		display: block
+		margin: 9px 0 50px
+	form
+		border-top: 1px solid #e4e4e4
+		text-align: center
+		.btn-main
+			max-width: 279px
+			height: 47px
+			width: 100%
+			line-height: 36px
+			font-size: 22px
+		button
+			margin: 20px auto 0
+		input
+			max-width: 280px
+			width: 100%
+			height: 47px
+			background-color: #fff
+			border: 1px solid #e6e6e6
+			border-radius: 5px
+			box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.11)
+			padding: 0 20px
+.block5__title
+	font-family: "PF DinDisplay Pro"
+	font-size: 35px
+	font-weight: 400
+	line-height: 30px
+	border-bottom: 1px solid #e4e4e4
+	padding: 0 0 26px
+	display: block
+
+.block5__item2
+	p
+		margin: 20px 0 0
+	form
+		margin: 22px 0 0
+		padding: 30px 0 0
+.block5__item1
+	.block5__line1
+		margin: 28px 0 0px
+		input
+			margin: 0 0 0 11px
+	form
+		margin: -41px 0 0
+		padding: 30px 0 0
+
+.owl-prev
+	width: 26px
+	height: 47px
+	display: block
+	background-image: url("../img/arrow-left.png")
+	background-repeat: no-repeat
+	font-size: 0
+	position: absolute
+	left: -55px
+	top: 20%
+.owl-next
+	width: 26px
+	height: 47px
+	display: block
+	background-image: url("../img/arrow-right.png")
+	background-repeat: no-repeat
+	font-size: 0
+	position: absolute
+	right: -55px
+	top: 20%
+
+.owl-carousel-1
+	img
+		display: block
+		margin: 0 auto
+
+.block6
+	padding: 7px 0 0
+	background-image: url("../img/block6-bg.png")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	.owl-carousel-1
+		margin: 27px 0 0
+		padding: 0 0 40px 0px
+		border-bottom: 1px solid #e5e5e5
+
+.owl-carousel-2
+	border-bottom: 1px solid #e5e5e5
+	padding: 40px 0 40px 0px
+	margin: 0 0 40px 0
+	img
+		display: block
+		margin: 0 auto
+	.owl-next, .owl-prev
+		top: 50% !important
+.last__block1
+	color: #049
+	font-family: "PF DinDisplay Pro"
+	font-size: 50px
+	font-weight: 500
+	font-style: italic
+	display: block
+	span
+		text-decoration: underline
+.last__block2
+	font-family: "PF DinDisplay Pro"
+	font-weight: 400
+	font-size: 35px
+	display: block
+.last__block_li1
+	a
+		font-family: "PF DinDisplay Pro"
+		font-weight: 400
+		color: #4d4d4d
+		font-size: 25px	
+.last__block
+	margin: 0 0 20px
+	ul
+		li
+			color: #4d4d4d
+			font-size: 25px
+.last__block_li2
+	a
+		color: #00add7
+		font-size: 25px
+		text-decoration: underline
+
+footer
+	min-height: 45px
+	a
+		font-family: "PF DinDisplay Pro"
+		font-size: 17px
+		font-weight: 400
+		text-decoration: underline
+		display: block
+		text-align: center
+		color: #4d4d4d
+		line-height: 45px
+
+.modal-title
+	text-transform: uppercase
+	color: $main-color
+.modal-content
+	max-width: 350px
+	width: 100%
+	margin: 0 auto
+.modal-body
+	button
+		margin: 0 auto
+		max-width: 280px !important
+	input
+		max-width: 280px
+		width: 100%
+		display: block
+		margin: 0 auto 15px
+		padding: 0 20px
+		height: 47px
+		background-color: #fff
+		border: 1px solid #e6e6e6
+		border-radius: 5px
+		box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.11)
+.modal-dialog2
+	background-color: #FFF
+	padding: 20px
+.block__thank_you_active
+	display: block !important
+.block__thank_you
+	max-width: 360px
+	height: 135px
+	background-size: cover
+	border-radius: 16px
+	padding-top: 10px
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	margin: auto
+	display: none
+	z-index: 9999
+	.title__popup
+		text-align: center
+		margin-left: 0
+		
