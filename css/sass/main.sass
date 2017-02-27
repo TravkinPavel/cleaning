@@ -95,7 +95,9 @@ body textarea:required:valid
 	line-height: $line-height-36
 	display: block
 	text-align: center
-	
+	transition: all 0.3s ease
+	&:hover
+		background-color: shade($main-color, 20%)
 .block__top-line__contact
 	max-width: 235px
 	width: 100%
@@ -278,6 +280,8 @@ h1
 	margin: 25px 0 0
 	text-align: center
 	padding: 26px 20px 40px
+	position: relative
+	z-index: 2
 	input
 		max-width: 280px
 		width: 100%
